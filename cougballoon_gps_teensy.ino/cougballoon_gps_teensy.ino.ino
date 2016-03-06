@@ -60,6 +60,7 @@ void InitializeSerialPorts() {
   delay(1000);
   Serial1.begin(9600);
   delay(50);
+<<<<<<< Updated upstream
   pinMode(13,OUTPUT);
 }
 
@@ -68,6 +69,9 @@ void InitializeSerialPorts() {
  */
 void InitializeGPSModule() {
    Serial1.println(PMTK_SET_NMEA_OUTPUT_RMCGGA);
+=======
+  Serial1.println(PMTK_SET_NMEA_OUTPUT_RMCGGA);
+>>>>>>> Stashed changes
   //Serial1.println(PMTK_SET_NMEA_OUTPUT_ALLDATA);
   delay(50);
   Serial1.println(PMTK_SET_NMEA_UPDATE_1HZ);
